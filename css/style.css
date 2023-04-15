@@ -6,11 +6,11 @@
   padding-bottom: 0;
 }
 
-.article__header {
+.header {
   padding: 60px 0 25px 0;
 }
 
-.article__header__title {
+.header__title {
   font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
@@ -31,35 +31,36 @@
   margin-bottom: 0;
 }
 
-.article__menu {
+.menu {
   margin: 0;
   padding: 25px 0 25px 0;
 }
 
-.article__menu__nav {
+.menu__nav {
   background-color: #F1F1F1;
   margin: 0 auto;
+  padding: 25px 45px 25px 45px;
+  border-radius: 10px;
 }
 
-.article__menu__title {
+.menu__title {
   font-weight: 700;
   font-size: 44px;
-  padding: 25px 0 0 45px;
   margin-bottom: 20px;
 }
 
-.article__menu__list {
+.menu__list {
   margin: 0;
-  padding: 0 0 25px 65px;
+  padding-left: 20px;
 }
 
-.article__menu__list__item {
+.menu__list__item {
   color: #02535F;
   text-decoration: underline;
   margin-bottom: 10px;
 }
 
-.article__menu__list__item:last-child {
+.menu__list__item:last-child {
   margin-bottom: 0;
 }
 
@@ -135,20 +136,21 @@
 
 .footer__resume {
   background-color: #F1F1F1;
-  padding: 25px 0 0 45px;
+  padding: 25px 45px 25px 45px;
+  border-radius: 10px;
 }
 
-.resume__title {
+.footer__title {
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 20px;
 }
 
-.resume__list {
+.footer__list {
   margin-bottom: 30px;
 }
 
-.resume__item {
+.footer__list__item {
   margin-bottom: 10px;
 }
