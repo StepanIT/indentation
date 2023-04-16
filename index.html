@@ -21,9 +21,9 @@
         <nav class="menu__nav">
           <h2 class="menu__title">Содержание:</h2>
           <ol class="menu__list">
-            <li class="menu__list__item"><a href="#one">Отступ задается от предыдущего элемента к следующему</a></li>
-            <li class="menu__list__item"><a href="#two">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-            <li class="menu__list__item"><a href="#three">Для последнего элемента группы отступ обнуляется</a></li>
+            <li class="menu__item"><a class="menu__link" href="#one">Отступ задается от предыдущего элемента к следующему</a></li>
+            <li class="menu__item"><a class="menu__link" href="#two">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+            <li class="menu__item"><a class="menu__link" href="#three">Для последнего элемента группы отступ обнуляется</a></li>
           </ol>
         </nav>
       </div>
@@ -32,25 +32,23 @@
       <div class="container">
         <h2 class="title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
         <div class="first-rule__first-block">
-          <div class="first-rule__first-block__image">
+          <div class="first-rule__first-block-image">
             <img class="first-rule__image-one" src="img/section-one/cat__image-1.jpg" alt="section-photo">
           </div>
-          <div class="first-rule__first-block__text">
-            <p class="text">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
-            <p class="text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.</p>
-            <p class="text">(!) Свойства margin-left и margin-top используются крайне редко.</p>
-            <p class="text">Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+          <div class="first-rule__first-block-text">
+            <p class="text">ВАЖНО: <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
+            <p class="text">Свойство <em>margin</em> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em>.</p>
+            <p class="text">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
+            <p class="text">Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
           </div>
         </div>
         <div class="first-rule__second-block">
-          <div class="first-rule__second-block__text">
-            <p class="text">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
+          <div class="first-rule__second-block-text">
+            <p class="text">Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и <em>padding-left</em> родителя.</p>
             <p class="text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
             <p class="text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
           </div>
-          <div class="first-rule__image-two__image">
             <img class="first-rule__image-two" src="img/section-one/cat__image-2.jpg" alt="section-photo">
-          </div>
         </div>
       </div>
     </section>
@@ -65,10 +63,10 @@
           <img class="second-rule__block-image__image" src="img/section-two/section-two__image-3.jpg" alt="photo-rule-three">
           <figcaption class="second-rule__block-image__text"><strong>ВАЖНО</strong>: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
         </figure>
-        <p class="text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+        <p class="text">Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em>, либо обёртке <em>&lt;article&gt;</em> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
         <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
         <img class="second-rule__image" src="img/section-two/section-two__image-4.jpg" alt="photo-rule-four">
-        <p class="text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
+        <p class="text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <em>section</em>. Именно для него задается <em>padding-top</em>, а не <em>div</em> с классом <em>container</em>. Свойства <em>margin</em>, которые стоят по умолчанию необходимо обнулить.</p>
         <img class="second-rule__image" src="img/section-two/section-two__image-5.jpg" alt="photo-rule-five">
         <p class="text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
       </div>
@@ -79,7 +77,7 @@
         <p class="text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
         <img class="third-rule__image" src="img/section-three/image-1.jpg" alt="third-rule-image-1">
-        <p class="text">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
+        <p class="text">В соответствии со вторым принципом: последний <em>margin</em> обнуляется, а нижний отступ задаётся через <em>padding</em> для <em>section</em>. Я чаще всего задаю <em>padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <em>padding-top:50px</em> и <em>padding-bottom:50px</em>.</p>
         <img class="third-rule__image" src="img/section-three/image-2.jpg" alt="third-rule-image-2">
         <figure class="third-rule__image">
           <img class="third-rule__image-three" src="img/section-three/image-3.jpg" alt="third-rule-image-3">
@@ -100,15 +98,15 @@
         <div class="footer__resume">
           <h2 class="footer__title">Подытожим:</h2>
           <ul class="footer__list">
-            <li class="footer__list__item">— отступы задаём от предыдущего элемента к следующему
+            <li class="footer__item">— отступы задаём от предыдущего элемента к следующему
             </li>
-            <li class="footer__list__item">— используем только margin-right и margin-bottom
+            <li class="footer__item">— используем только margin-right и margin-bottom
             </li>
-            <li class="footer__list__item">— внешние отступы задаются только между соседями
+            <li class="footer__item">— внешние отступы задаются только между соседями
             </li>
-            <li class="footer__list__item">— внутренний отступ задаём самому верхнему элементу в дом дереве
+            <li class="footer__item">— внутренний отступ задаём самому верхнему элементу в дом дереве
             </li>
-            <li class="footer__list__item">— последнему элементу группы отступ всегда обнуляем</li>
+            <li class="footer__item">— последнему элементу группы отступ всегда обнуляем</li>
           </ul>
           <p class="text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
         </div>
